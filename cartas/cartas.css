@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-family: 'Literata', serif;
+}
+
+body {
+    background-color: LightSlateGray;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 10px auto;
+    padding: 13px 0;
+    background-color: DarkSlateGray;
+    border: 5px solid whitesmoke;
+    border-radius: 5px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: normal;
+}
+
+hr {
+    background-color: whitesmoke;
+    flex-basis: 6px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.cartas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.carta {
+    width: 170px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.5);
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.indice {
+    color: #222222;
+    font-size: 12pt;
+    margin: 5px 5px;
+}
+
+.carta10 .indice .numero {
+    font-size: 11pt;
+}
+
+.indice > .numero {
+    font-weight: bold;
+}
+
+.indice > .palo {
+    margin-top: -5px;
+}
+
+.indice > div {
+    text-align: center;
+    margin: 0 2px;
+}
+
+.girar {
+    transform: rotate(180deg);
+}
+
+.treboles {
+    padding: 5px;
+
+    flex-basis: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.columna {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.trebol {
+    font-size: 2.5em;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.evenly {
+    justify-content: space-evenly;
+}
+
+.oculto {
+    visibility: hidden;
+}
+
+.centrado {
+    justify-content: center;
+}

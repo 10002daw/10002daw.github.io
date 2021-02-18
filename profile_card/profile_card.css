@@ -40,12 +40,13 @@ html {
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 h1 {
     text-align: center;
     font-size: 2.2em;
-    padding-top: 15px;
+    padding: 2% 0;
     font-weight: bold;
 }
 
@@ -108,8 +109,7 @@ h1 {
 
 .card:hover img {
     filter: brightness(100%);
-    transform: scale(1.1);
-    
+    transform: scale(1.1); 
 }
 
 .card-a:hover img {
@@ -132,10 +132,12 @@ h2,
 h3 {
     margin: 10px 0;
     font-weight: 400;
+    text-align: center;
 }
 
 h2 {
     font-size: 1.6em;
+    font-weight: bold;
 }
 
 h3 {
@@ -150,7 +152,7 @@ h3 {
     align-self: flex-start;
     margin-left: 5%;
     opacity: 0%;
-
+    flex-shrink: 0;
     transition: opacity 1s, width 3s;
 }
 
@@ -246,4 +248,106 @@ h3 {
     align-items: stretch;
 
     min-width: 300px;
+}
+
+@media screen and (max-width:900px) {
+    html {
+        font-size: 80%;
+    }
+
+    h1 {
+        font-size: 2.4em;
+    }
+
+    .pareja {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .card {
+        margin: 10px 10%;
+    }
+
+    .card hr {
+        width: 90%;
+        opacity: 100%;
+    }
+
+    .card .sn {
+        transform: scaleY(1);
+    }
+
+    .decoracion {
+        height: 60%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .card p {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 70%;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    .row {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .solo {
+        min-width: 0;
+    }
+
+    .pareja {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+
+    .card:hover img {
+        box-shadow: 0 0 0 1px black;
+        filter: brightness(130%);
+        transform: scale(1);
+    }
+
+    .card:hover {
+        border: solid 3px rgba(0, 0, 0, 0);
+        border-radius: 0;
+    }
+
+    .card .sn a i {
+        font-size: 2.5em;
+    }    
+
+    .card-a .sn a:hover {
+        color: #165043;
+        background-color: gainsboro;
+    }
+    
+    .card-b .sn a:hover {
+        color: #2e1c4a;
+        background-color: gainsboro;
+    }
+    
+    .card-c .sn a:hover {
+        color: #411a0b;
+        background-color: gainsboro;
+    }
+    
+    .card-d .sn a:hover {
+        color: #3e3c0f;
+        background-color: gainsboro;
+    }
 }
